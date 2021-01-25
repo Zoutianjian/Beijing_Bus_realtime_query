@@ -22,7 +22,9 @@ def consult_Bus_Line(Line_name):
 
 def consult_Line_Station(Line_ID_Str):
     Station_Str1 = 'http://www.bjbus.com/api/api_etastation.php?lineId='
+    
     Station_Str2 = '&token=eyJhbGciOiJIUzI1NiIsIlR5cGUiOiJKd3QiLCJ0eXAiOiJKV1QifQ.eyJwYXNzd29yZCI6IjY0ODU5MTQzNSIsInVzZXJOYW1lIjoiYmpidXMiLCJleHAiOjE2MTEyODgwMDB9.BJqtzMSedNqs3d12hWLHFC-PeWk_dToFGZ25Kumc4RM'
+    Station_Str2 = '&token=eyJhbGciOiJIUzI1NiIsIlR5cGUiOiJKd3QiLCJ0eXAiOiJKV1QifQ.eyJwYXNzd29yZCI6IjY0ODU5MTQzNSIsInVzZXJOYW1lIjoiYmpidXMiLCJleHAiOjE2MTM5NDQ4MDB9.dIwtbSPc52TzsQ68DafuImR2_NZcJ08sQZjfXWoSJS0'
     Station_url_str = Station_Str1 + Line_ID_Str + Station_Str2
 
     try:
@@ -37,6 +39,7 @@ def consult_Bus(Line_ID_Str,Station_Str):
     Bus_Str1 = 'http://www.bjbus.com/api/api_etartime.php?conditionstr='
     Bus_ID_Str = Line_ID_Str + '-' + Station_Str
     Bus_Str2 = '&token=eyJhbGciOiJIUzI1NiIsIlR5cGUiOiJKd3QiLCJ0eXAiOiJKV1QifQ.eyJwYXNzd29yZCI6IjY0ODU5MTQzNSIsInVzZXJOYW1lIjoiYmpidXMiLCJleHAiOjE2MTEyODgwMDB9.BJqtzMSedNqs3d12hWLHFC-PeWk_dToFGZ25Kumc4RM'
+    Bus_Str2 = '&token=eyJhbGciOiJIUzI1NiIsIlR5cGUiOiJKd3QiLCJ0eXAiOiJKV1QifQ.eyJwYXNzd29yZCI6IjY0ODU5MTQzNSIsInVzZXJOYW1lIjoiYmpidXMiLCJleHAiOjE2MTM5NDQ4MDB9.dIwtbSPc52TzsQ68DafuImR2_NZcJ08sQZjfXWoSJS0'
     Bus_url_str = Bus_Str1 + Bus_ID_Str + Bus_Str2
     try:
         response2 = req.get(Bus_url_str)
