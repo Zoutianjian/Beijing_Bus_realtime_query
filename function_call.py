@@ -30,6 +30,7 @@ def consult_Line_Station(Line_ID_Str):
     Station_Str2 = '&token=eyJhbGciOiJIUzI1NiIsIlR5cGUiOiJKd3QiLCJ0eXAiOiJKV1QifQ.eyJwYXNzd29yZCI6IjY0ODU5MTQzNSIsInVzZXJOYW1lIjoiYmpidXMiLCJleHAiOjE2MjE3MjA4MDF9.fiP0eWDkEb8jZ4V9JIpwkt9vIJuhFsD7DuBaR8S1ers'
     Station_Str2 = '&token=eyJhbGciOiJIUzI1NiIsIlR5cGUiOiJKd3QiLCJ0eXAiOiJKV1QifQ.eyJwYXNzd29yZCI6IjY0ODU5MTQzNSIsInVzZXJOYW1lIjoiYmpidXMiLCJleHAiOjE2MjQ1MDMxMDB9.l1a915d9OleMq_6YUjch004V0ZGNsXlqa6iGMB_m0i8'
     Station_Str2 = '&token=eyJhbGciOiJIUzI1NiIsIlR5cGUiOiJKd3QiLCJ0eXAiOiJKV1QifQ.eyJwYXNzd29yZCI6IjY0ODU5MTQzNSIsInVzZXJOYW1lIjoiYmpidXMiLCJleHAiOjE2MjcwOTkyMDB9.OQYkF6rC9jfgxoC5nXDjjv1nqDIv3KfXqol0ATdts9g'
+    Station_Str2 = '&token=eyJhbGciOiJIUzI1NiIsIlR5cGUiOiJKd3QiLCJ0eXAiOiJKV1QifQ.eyJwYXNzd29yZCI6IjY0ODU5MTQzNSIsInVzZXJOYW1lIjoiYmpidXMiLCJleHAiOjE2MzAxMjA3MDJ9.RIWvu5qeD2iziXk3kOEYJeeRge8hH1OuwDwhGxjew7w'
     Station_url_str = Station_Str1 + Line_ID_Str + Station_Str2
 
     try:
@@ -50,6 +51,7 @@ def consult_Bus(Line_ID_Str,Station_Str):
     Bus_Str2 = '&token=eyJhbGciOiJIUzI1NiIsIlR5cGUiOiJKd3QiLCJ0eXAiOiJKV1QifQ.eyJwYXNzd29yZCI6IjY0ODU5MTQzNSIsInVzZXJOYW1lIjoiYmpidXMiLCJleHAiOjE2MjE3MjA4MDF9.fiP0eWDkEb8jZ4V9JIpwkt9vIJuhFsD7DuBaR8S1ers'
     Bus_Str2 = '&token=eyJhbGciOiJIUzI1NiIsIlR5cGUiOiJKd3QiLCJ0eXAiOiJKV1QifQ.eyJwYXNzd29yZCI6IjY0ODU5MTQzNSIsInVzZXJOYW1lIjoiYmpidXMiLCJleHAiOjE2MjQ1MDMxMDB9.l1a915d9OleMq_6YUjch004V0ZGNsXlqa6iGMB_m0i8'
     Bus_Str2 = '&token=eyJhbGciOiJIUzI1NiIsIlR5cGUiOiJKd3QiLCJ0eXAiOiJKV1QifQ.eyJwYXNzd29yZCI6IjY0ODU5MTQzNSIsInVzZXJOYW1lIjoiYmpidXMiLCJleHAiOjE2MjcwOTkyMDB9.OQYkF6rC9jfgxoC5nXDjjv1nqDIv3KfXqol0ATdts9g'
+    Bus_Str2 = '&token=eyJhbGciOiJIUzI1NiIsIlR5cGUiOiJKd3QiLCJ0eXAiOiJKV1QifQ.eyJwYXNzd29yZCI6IjY0ODU5MTQzNSIsInVzZXJOYW1lIjoiYmpidXMiLCJleHAiOjE2MzAxMjA3MDJ9.RIWvu5qeD2iziXk3kOEYJeeRge8hH1OuwDwhGxjew7w'
     Bus_url_str = Bus_Str1 + Bus_ID_Str + Bus_Str2
     try:
         response2 = req.get(Bus_url_str)
